@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+<!---->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duckify->Build-a-Duck</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+    <h1>Build-a-Duck</h1>
+</header>
+
+
+<nav>
+    <a href="index.html">Hjem</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="build.html">Build-a-Duck</a>
+    <a href="kollektion.html">Kollektion</a>
+    <a href="om.html">Om</a>
+</nav>
+
+<style>
+    @keyframes bob{
+        0%{
+            scale: 1;
+        }
+
+        50%{
+            scale: 1.01;
+        }
+
+        100%{
+            scale: 1;
+        }
+        
+    }
+</style>
+
+<main>
+    <h2 style="background-color: cornsilk;
+     border-radius: 10px;
+        
+       padding: 10px;
+       margin-bottom: 20px;"
+       >Byg din egen and!</h2>
+
+
+    <img style="width: 500px; 
+    border-radius: 1000px;
+    
+    box-shadow: 0px 0px 30px blue;
+    animation: bob 2s ease-in-out infinite" 
+    src="Images/mystery.png" alt="">
+
+    
+
+
+
+    <h3 style="position: absolute;
+    translate:-70px -470px;"
+    >Farve:</h3>
+
+    <input type="text" placeholder=" Vælg farve" style=
+    "position: absolute;
+    width: 80px;
+    translate: -320px -440px;
+    border: 2px outset black ;" readonly>
+
+
+
+    <h3 style="position: absolute;
+    translate: 470px -470px;"
+    >Størrelse:</h3>
+
+    <input type="text" placeholder=" Vælg størrelse" style=
+    "position: absolute;
+    width: 100px;
+    translate: 220px -440px;
+    border: 2px outset black ;" readonly>
+
+
+
+    <h3 style="position: absolute;
+    translate: -70px -40px;"
+    >Smykker:</h3>
+
+    <input type="text" placeholder=" Vælg smykker" style=
+    "position: absolute;
+    width: 100px;
+    translate: -320px -10px;
+    border: 2px outset black ;
+    display: inline;" readonly>
+
+
+    <h3 style="position: absolute;
+    translate: 450px -40px;"
+    >Tøj:</h3>
+
+    <input type="text" placeholder=" Vælg tøj" style=
+    "position: absolute;
+    width: 80px;
+    translate: 200px -10px;
+    border: 2px outset black ;
+    display: inline;" readonly>
+
+</main>
+
+
+
+
+<footer>
+    © 2026 • Duckify
+</footer>
+<!-- Cookie boks -->
+<div id="cookie-box">
+    <p>Vi bruger cookies til at forbedre din oplevelse. Ved at fortsætte accepterer du brugen af cookies.</p>
+    <button id="accept-cookies">Accepter</button>
+</div>
+
+
+<script src="script.js" ></script>
+
+
+</body>
+</html>

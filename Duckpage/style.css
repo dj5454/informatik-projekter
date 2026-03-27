@@ -1,0 +1,202 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+.element{
+        width: 200px;
+        height: 200px;
+        border: 4px solid aquamarine ;
+        margin: 0 auto;
+        
+    }
+
+.element div{
+    position: absolute;
+    translate: 0px 50px;
+
+
+}
+
+.imgcontainer {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+  border: 0px solid red ;
+}
+
+
+.card {
+  width: 140px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 15px aqua, 0 0 80px aqua inset;
+}
+
+#common{
+    box-shadow: 0px 0px 15px gray, 0px 0px 90px gray inset;
+}
+#uncommon{
+    box-shadow: 0px 0px 15px green, 0px 0px 90px green inset;
+}
+#rare{
+    box-shadow: 0px 0px 15px rgb(0, 100, 255), 0px 0px 80px rgb(0, 100, 255) inset;
+}
+#epic{
+    box-shadow: 0px 0px 15px purple, 0px 0px 80px purple inset;
+}
+#legendary{
+    box-shadow: 0px 0px 15px yellow, 0px 0px 90px yellow inset;
+}
+#mythic{
+    box-shadow: 0px 0px 15px aqua, 0px 0px 90px aqua inset;
+}
+
+.card img{
+  height: 140px;
+  width: 140px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+ 
+
+
+}
+
+
+  
+
+img:hover{
+    scale: 1.01;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff7b4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background: burlywood/*#d8c70e*/;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav {
+    background: rgb(243, 193, 85);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px 0;
+}
+
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+
+
+padding: 8px 8px; /* giver plads til boksen */
+border-radius: 6px;
+
+
+}
+
+
+nav a:hover {
+background: rgba(244, 255, 124, 0.22); /* lidt lysere */
+transform: scale(1.1); /* gør boksen lidt større */
+border: 2px outset #f4ff7c ;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border: 0dvh solid #74b9ff;
+
+}
+
+
+footer {
+    background: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+
+/* Cookie boks */
+#cookie-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+
+#cookie-box button {
+    background: #000000;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+#cookie-box button:hover {
+    background: #74b9ff;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    0%{}
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0%);
+    }
+    
+    50%{
+        transform: translateY(10%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+
+}
+
